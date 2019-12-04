@@ -28,7 +28,8 @@ defmodule Absinthe.Plug.Mixfile do
         Website: "https://absinthe-graphql.org",
         Changelog: "https://github.com/absinthe-graphql/absinthe_plug/blob/master/CHANGELOG.md",
         GitHub: "https://github.com/absinthe-graphql/absinthe_plug"
-      }
+      },
+      organization: "hippware",
     ]
   end
 
@@ -43,7 +44,7 @@ defmodule Absinthe.Plug.Mixfile do
   defp deps do
     [
       {:plug, "~> 1.3.2 or ~> 1.4"},
-      {:absinthe, "~> 1.5.0-beta.0"},
+      {:absinthe, "~> 1.5.0-beta.2", organization: "hippware"},
       {:jason, ">= 0.0.0", only: [:dev, :test]},
       {:ex_doc, "~> 0.20.2", only: :dev}
     ]
